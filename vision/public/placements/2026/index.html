@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<!-- saved from url=(0173)file:///C:/Users/Ashut/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/61CD6FC357E96A10141C0A387D0FAB5E67B3E032/transfers/2026-34/2026.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Placement Analysis - MCA Batch 2023-26 (NITT)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            overflow-x: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            font-size: 28px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e8eaf6;
+            padding-bottom: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 12px 15px;
+            text-align: center;
+            border-left: 4px solid #1a237e;
+        }
+
+        .stat-card .number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a237e;
+        }
+
+        .stat-card .label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .stat-card.green { border-color: #2e7d32; }
+        .stat-card.green .number { color: #2e7d32; }
+        .stat-card.orange { border-color: #e65100; }
+        .stat-card.orange .number { color: #e65100; }
+        .stat-card.purple { border-color: #6a1b9a; }
+        .stat-card.purple .number { color: #6a1b9a; }
+        .stat-card.teal { border-color: #00695c; }
+        .stat-card.teal .number { color: #00695c; }
+        .stat-card.red { border-color: #c62828; }
+        .stat-card.red .number { color: #c62828; }
+        .stat-card.pink { border-color: #880e4f; }
+        .stat-card.pink .number { color: #880e4f; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead th {
+            background: #1a237e;
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        thead th:nth-child(1) { width: 6%; }
+        thead th:nth-child(2) { width: 12%; }
+        thead th:nth-child(3) { width: 12%; }
+        thead th:nth-child(4) { width: 12%; }
+        thead th:nth-child(5) { width: 18%; }
+        thead th:nth-child(6) { width: 20%; }
+        thead th:nth-child(7) { width: 20%; }
+
+        tbody tr {
+            border-bottom: 1px solid #e8eaf6;
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        tbody td {
+            padding: 8px 8px;
+            vertical-align: middle;
+            line-height: 1.4;
+        }
+
+        .date-cell {
+            font-weight: 600;
+            color: #1a237e;
+            white-space: nowrap;
+            font-size: 11px;
+        }
+
+        .company-cell {
+            font-weight: 600;
+            color: #1a237e;
+            font-size: 12px;
+        }
+
+        .ctc-cell {
+            font-weight: 600;
+            color: #00695c;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+
+        .offer-type {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .offer-type.intern {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .offer-type.fte {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+
+        .offer-type.ppo {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .offer-type.intern-fte {
+            background: #fce4ec;
+            color: #880e4f;
+        }
+
+        .offer-type.intern-pbc {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+
+        .shortlist-cell {
+            font-size: 11px;
+            color: #333;
+        }
+
+        .shortlist-cell .name {
+            display: inline-block;
+            background: #e3f2fd;
+            padding: 1px 6px;
+            border-radius: 8px;
+            margin: 1px 1px;
+            font-size: 10px;
+            color: #0d47a1;
+        }
+
+        .select-cell {
+            font-size: 11px;
+        }
+
+        .select-cell .select {
+            display: inline-block;
+            background: #e8f5e9;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin: 1px 1px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #1b5e20;
+        }
+
+        .select-cell .select .hash {
+            color: #2e7d32;
+            font-weight: 700;
+        }
+
+        .requirement-cell {
+            font-size: 10.5px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .requirement-cell .criteria {
+            display: inline-block;
+            background: #f5f5f5;
+            padding: 1px 6px;
+            border-radius: 6px;
+            margin: 1px 1px;
+            font-size: 10px;
+            color: #555;
+        }
+
+        .no-shortlist {
+            color: #c62828;
+            font-weight: 600;
+            font-size: 11px;
+            background: #ffebee;
+            padding: 2px 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .no-select {
+            color: #c62828;
+            font-weight: 600;
+            font-size: 11px;
+            background: #ffebee;
+            padding: 2px 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .pending {
+            color: #e65100;
+            font-weight: 600;
+            font-size: 11px;
+            background: #fff3e0;
+            padding: 2px 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0 10px;
+            padding: 12px 18px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+        }
+
+        .legend-color.green { background: #e8f5e9; border: 1px solid #1b5e20; }
+        .legend-color.blue { background: #e3f2fd; border: 1px solid #0d47a1; }
+        .legend-color.red { background: #ffebee; border: 1px solid #c62828; }
+        .legend-color.orange { background: #fff3e0; border: 1px solid #e65100; }
+        .legend-color.pink { background: #fce4ec; border: 1px solid #880e4f; }
+        .legend-color.purple { background: #f3e5f5; border: 1px solid #4a148c; }
+
+        .section-title {
+            background: #e8eaf6;
+            padding: 10px 15px;
+            margin: 20px 0 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            color: #1a237e;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 12px; }
+            h1 { font-size: 18px; }
+            table { font-size: 9px; }
+            thead th, tbody td { padding: 3px 2px; }
+            .stats-grid { grid-template-columns: repeat(3, 1fr); }
+            .stat-card .number { font-size: 16px; }
+            .shortlist-cell .name, .select-cell .select { font-size: 8px; padding: 1px 4px; }
+            .ctc-cell { font-size: 9px; }
+            .company-cell { font-size: 9px; }
+            .requirement-cell { font-size: 9px; }
+        }
+
+        @media print {
+            body { background: white; padding: 10px; }
+            .container { box-shadow: none; padding: 10px; }
+            tbody tr:hover { background: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Complete Placement Analysis</h1>
+    <div class="subtitle">MCA Batch 2023-26 · NIT Tiruchirappalli · May 2024 – June 2026</div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+        <div class="stat-card"><div class="number">60</div><div class="label">Total Companies</div></div>
+        <div class="stat-card green"><div class="number">32</div><div class="label">Companies with Selects</div></div>
+        <div class="stat-card red"><div class="number">28</div><div class="label">No Selects</div></div>
+        <div class="stat-card purple"><div class="number">77</div><div class="label">Total Selected Students</div></div>
+        <div class="stat-card orange"><div class="number">16</div><div class="label">Internship Offers</div></div>
+        <div class="stat-card teal"><div class="number">58</div><div class="label">FTE Offers</div></div>
+        <div class="stat-card pink"><div class="number">3</div><div class="label">PPO Offers</div></div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+        <span style="font-weight:600; color:#333; margin-right:8px;">Legend:</span>
+        <div class="legend-item"><span class="legend-color green"></span> Selected</div>
+        <div class="legend-item"><span class="legend-color blue"></span> Shortlisted</div>
+        <div class="legend-item"><span class="legend-color red"></span> No Select / No Shortlist</div>
+        <div class="legend-item"><span class="legend-color orange"></span> PPO</div>
+        <div class="legend-item"><span class="legend-color pink"></span> Internship + FTE</div>
+        <div class="legend-item"><span class="legend-color purple"></span> Internship + PBC</div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: INTERNSHIP DRIVES (May 2024 - Feb 2025)           -->
+    <!-- ============================================================ -->
+    <div class="section-title">🎯 INTERNSHIP DRIVES (May 2024 – February 2025)</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Offer Type</th>
+                <th>CTC / Stipend</th>
+                <th>Requirements</th>
+                <th>Shortlisted</th>
+                <th>Selected</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <!-- 1. DE Shaw - Internship -->
+        <tr>
+            <td class="date-cell">24-Jul-24</td>
+            <td class="company-cell">DE Shaw</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹1,50,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+ (CSE/MCA)</span><span class="criteria">Circuital: 8+</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Satish Prajapati</span>
+                <span class="name">Nikhil Chhipa</span>
+                <span class="name">Shikhar Mishra</span>
+                <span class="name">Pratham</span>
+                <span class="name">Aditya Aggarwal</span>
+                <span class="name">Nrusimha Teja</span>
+                <span class="name">Dainish Rahangdale</span>
+                <span class="name">Sourab Kumar</span>
+                <span class="name">Aditi Sharma</span>
+            </td>
+            <td class="select-cell"><span class="select"><span class="hash">#1</span> Aditya Aggarwal</span></td>
+        </tr>
+
+        <!-- 2. Goldman Sachs - Internship -->
+        <tr>
+            <td class="date-cell">28-Jul-24</td>
+            <td class="company-cell">Goldman Sachs</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹1,50,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Eligibility Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Satish Prajapati</span>
+                <span class="name">Prabhat Kumar</span>
+                <span class="name">Sourab Kumar</span>
+                <span class="name">Manjeet Yadav</span>
+                <span class="name">Sourabh Ramteke</span>
+                <span class="name">Amit</span>
+                <span class="name">Nikhil Mittal</span>
+                <span class="name">Astik Verma</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#2</span> Sourab Kumar</span>
+                <span class="select"><span class="hash">#3</span> Satish Prajapati</span>
+            </td>
+        </tr>
+
+        <!-- 3. Google -->
+        <tr>
+            <td class="date-cell">24-Jul-24</td>
+            <td class="company-cell">Google</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹1,28,333/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 4. Microsoft -->
+        <tr>
+            <td class="date-cell">31-Jul-24</td>
+            <td class="company-cell">Microsoft</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹1,25,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 5. VISA - Internship -->
+        <tr>
+            <td class="date-cell">29-Aug-24</td>
+            <td class="company-cell">VISA</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹95,000/mo + ₹1L bonus</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Kush Jaiswal</span>
+                <span class="name">Darshan Udaiwal</span>
+                <span class="name">Ashish</span>
+                <span class="name">Vivek Kumar</span>
+                <span class="name">Aditi Sharma</span>
+                <span class="name">Amita Makwana</span>
+                <span class="name">Nitya Gupta</span>
+                <span class="name">Kishu Gupta</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#4</span> Vivek Kumar</span>
+                <span class="select"><span class="hash">#5</span> Aditi Sharma</span>
+                <span class="select"><span class="hash">#6</span> Nitya Gupta</span>
+            </td>
+        </tr>
+
+        <!-- 6. KLA - Internship -->
+        <tr>
+            <td class="date-cell">29-Aug-24</td>
+            <td class="company-cell">KLA</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹1,25,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Nrusimha Teja</span>
+                <span class="name">Vivek Kumar</span>
+                <span class="name">Nikhil Mittal</span>
+                <span class="name">Prashant Patel</span>
+                <span class="name">Vaibhav Gupta</span>
+                <span class="name">Pratham</span>
+                <span class="name">Nimesh Nadar</span>
+                <span class="name">Anand Gupta</span>
+                <span class="name">Chandan Kumar</span>
+                <span class="name">Dainish Rahangdale</span>
+                <span class="name">Manjeet Yadav</span>
+                <span class="name">Neha Pandey</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Astik Verma</span>
+                <span class="name">Hari Mohan</span>
+                <span class="name">Joval Joseph</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Yashraj Jangir</span>
+                <span class="name">Ayush Tyagi</span>
+                <span class="name">Rahul Kumar Sah</span>
+                <span class="name">Nisha Dhakad</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#7</span> Nrusimha Teja</span>
+                <span class="select"><span class="hash">#8</span> Nikhil Mittal</span>
+                <span class="select"><span class="hash">#9</span> Prashant Patel</span>
+                <span class="select"><span class="hash">#10</span> Pratham</span>
+                <span class="select"><span class="hash">#11</span> Manjeet Yadav</span>
+            </td>
+        </tr>
+
+        <!-- 7. SAP Labs - Internship -->
+        <tr>
+            <td class="date-cell">19-Sep-24</td>
+            <td class="company-cell">SAP Labs</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹45,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span><span class="criteria">60% in 10th/12th</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Nisha Dhakad</span>
+                <span class="name">Deeksha Pandey</span>
+            </td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 8. Morgan Stanley - Internship -->
+        <tr>
+            <td class="date-cell">20-Sep-24</td>
+            <td class="company-cell">Morgan Stanley</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹87,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ayush Tyagi</span>
+                <span class="name">Kush Jaiswal</span>
+                <span class="name">Sahil Khan</span>
+                <span class="name">Mansi Sahu</span>
+                <span class="name">Deeksha Pandey</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#12</span> Ayush Tyagi</span>
+                <span class="select"><span class="hash">#13</span> Kush Jaiswal</span>
+                <span class="select"><span class="hash">#14</span> Sahil Khan</span>
+            </td>
+        </tr>
+
+        <!-- 9. Optum -->
+        <tr>
+            <td class="date-cell">22-Sep-24</td>
+            <td class="company-cell">Optum</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹40,000/mo + ₹50K</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 10. Atomberg -->
+        <tr>
+            <td class="date-cell">05-Oct-24</td>
+            <td class="company-cell">Atomberg</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹50,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 11. Sequretek -->
+        <tr>
+            <td class="date-cell">20-Oct-24</td>
+            <td class="company-cell">Sequretek</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹75,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 12. Tech Mahindra -->
+        <tr>
+            <td class="date-cell">14-Nov-24</td>
+            <td class="company-cell">Tech Mahindra</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹70,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 13. Bosch -->
+        <tr>
+            <td class="date-cell">18-Jan-25</td>
+            <td class="company-cell">Bosch</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹25,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ganesh Kumar</span>
+                <span class="name">Pranjal Tripathi</span>
+            </td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 14. Marvell Technology -->
+        <tr>
+            <td class="date-cell">10-Feb-25</td>
+            <td class="company-cell">Marvell Technology</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹45,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 15. CISCO - Internship -->
+        <tr>
+            <td class="date-cell">29-Jun-25</td>
+            <td class="company-cell">CISCO</td>
+            <td><span class="offer-type intern">Internship</span></td>
+            <td class="ctc-cell">₹98,000/mo</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span style="color:#e65100; font-size:11px;">→ Later FTE (#32)</span></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: FTE & PPO DRIVES (July 2025 - June 2026)          -->
+    <!-- ============================================================ -->
+    <div class="section-title">💼 FTE &amp; PPO DRIVES (July 2025 – June 2026)</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Offer Type</th>
+                <th>CTC / Stipend</th>
+                <th>Requirements</th>
+                <th>Shortlisted</th>
+                <th>Selected</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <!-- 16. DE Shaw - FTE -->
+        <tr>
+            <td class="date-cell">21-Jul-25</td>
+            <td class="company-cell">DE Shaw</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+ (CSE/MCA)</span><span class="criteria">Circuital: 8+</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#1</span> Aditya Aggarwal</span></td>
+        </tr>
+
+        <!-- 17. Goldman Sachs - FTE -->
+        <tr>
+            <td class="date-cell">21-Jul-25</td>
+            <td class="company-cell">Goldman Sachs</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#2</span> Sourab Kumar</span></td>
+        </tr>
+
+        <!-- 18. KLA - FTE -->
+        <tr>
+            <td class="date-cell">25-Jul-25</td>
+            <td class="company-cell">KLA</td>
+            <td><span class="offer-type intern-fte">FTE + 6mo Intern</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#3</span> Nrusimha Teja</span>
+                <span class="select"><span class="hash">#4</span> Manjeet Yadav</span>
+                <span class="select"><span class="hash">#5</span> Nikhil Mittal</span>
+                <span class="select"><span class="hash">#6</span> Prashant Patel</span>
+                <span class="select"><span class="hash">#7</span> Pratham</span>
+            </td>
+        </tr>
+
+        <!-- 19. Oracle -->
+        <tr>
+            <td class="date-cell">25-Aug-25</td>
+            <td class="company-cell">Oracle</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹35.63 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 20. RingCentral -->
+        <tr>
+            <td class="date-cell">06-Aug-25</td>
+            <td class="company-cell">RingCentral</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹28-33 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aditya Kumar</span>
+                <span class="name">Altaf Hussain</span>
+                <span class="name">Astik Verma</span>
+                <span class="name">Hariom Patidar</span>
+                <span class="name">Prabhat Kumar</span>
+                <span class="name">Rahul Kumar Sah</span>
+                <span class="name">Rohit Mishra</span>
+                <span class="name">Satish Prajapati</span>
+                <span class="name">Shikhar Mishra</span>
+                <span class="name">Somosree Sikdar</span>
+                <span class="name">Vivek Kumar</span>
+                <span class="name">Vaibhav Gupta</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#11</span> Astik Verma</span>
+                <span class="select"><span class="hash">#12</span> Satish Prajapati</span>
+            </td>
+        </tr>
+
+        <!-- 21. VISA - FTE (Aug 2025) -->
+        <tr>
+            <td class="date-cell">06-Aug-25</td>
+            <td class="company-cell">VISA</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹38.51 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#8</span> Aditi Sharma</span>
+                <span class="select"><span class="hash">#9</span> Nitya Gupta</span>
+                <span class="select"><span class="hash">#10</span> Vivek Kumar</span>
+            </td>
+        </tr>
+
+        <!-- 22. Morgan Stanley - PPO (Ayush) -->
+        <tr>
+            <td class="date-cell">21-Aug-25</td>
+            <td class="company-cell">Morgan Stanley</td>
+            <td><span class="offer-type ppo">PPO</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#13</span> Ayush Tyagi</span></td>
+        </tr>
+
+        <!-- 23. Flipkart -->
+        <tr>
+            <td class="date-cell">04-Sep-25</td>
+            <td class="company-cell">Flipkart</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹32.58 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="name">Anamika Verma (Waitlisted)</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 24. VISA - FTE (Sep 2025) -->
+        <tr>
+            <td class="date-cell">11-Sep-25</td>
+            <td class="company-cell">VISA</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹38.51 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aditya Kumar</span>
+                <span class="name">Akshat Jain</span>
+                <span class="name">Aman Kumar</span>
+                <span class="name">Bharat Bishnoi</span>
+                <span class="name">Dainish Rahangdale</span>
+                <span class="name">Darshan Udaiwal</span>
+                <span class="name">Nimesh Nadar</span>
+                <span class="name">Patel Shrey</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Rahul Kumar Sah</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Shikhar Mishra</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#19</span> Dainish Rahangdale</span>
+                <span class="select"><span class="hash">#20</span> Darshan Udaiwal</span>
+                <span class="select"><span class="hash">#21</span> Rahul Kumar Sah</span>
+            </td>
+        </tr>
+
+        <!-- 25. Morgan Stanley - PPO (Sahil) -->
+        <tr>
+            <td class="date-cell">05-Sep-25</td>
+            <td class="company-cell">Morgan Stanley</td>
+            <td><span class="offer-type ppo">PPO</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#14</span> Sahil Khan</span></td>
+        </tr>
+
+        <!-- 26. SanDisk -->
+        <tr>
+            <td class="date-cell">06-Sep-25</td>
+            <td class="company-cell">SanDisk</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹21.50 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aman Kumar</span>
+                <span class="name">Chirag Tomar</span>
+                <span class="name">Dainish Rahangdale</span>
+                <span class="name">Hariom Patidar</span>
+                <span class="name">Hari Mohan</span>
+                <span class="name">Joval Joseph</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Kush Jaiswal</span>
+                <span class="name">Nikhil Chhipa</span>
+                <span class="name">Nimesh Nadar</span>
+                <span class="name">Prabhat Kumar</span>
+                <span class="name">Rahul Kumar Sah</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Saurabh Soni</span>
+                <span class="name">Tanchho Limbu</span>
+                <span class="name">Vaibhav Gupta</span>
+            </td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 27. SAP Labs - FTE -->
+        <tr>
+            <td class="date-cell">10-Sep-25</td>
+            <td class="company-cell">SAP Labs</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹32.07 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span><span class="criteria">60% in 10th/12th</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">Consulting: No Shortlists</span></td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#15</span> Isha Kumari</span>
+                <span class="select"><span class="hash">#16</span> Kush Jaiswal</span>
+                <span class="select"><span class="hash">#17</span> Prabhat Kumar</span>
+                <span class="select"><span class="hash">#18</span> Shikhar Mishra</span>
+            </td>
+        </tr>
+
+        <!-- 28. Thorogood -->
+        <tr>
+            <td class="date-cell">11-Sep-25</td>
+            <td class="company-cell">Thorogood</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹14.82 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6.5+</span></td>
+            <td class="shortlist-cell"><span class="name">Priyanshu Miglani</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 29. Micron -->
+        <tr>
+            <td class="date-cell">17-Sep-25</td>
+            <td class="company-cell">Micron</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹31.12 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 30. Citi Bank -->
+        <tr>
+            <td class="date-cell">26-Sep-25</td>
+            <td class="company-cell">Citi Bank</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹12.83 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ajay Mourya</span>
+                <span class="name">Akshat Jain</span>
+                <span class="name">Anshuraj Kawlecha</span>
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Chandan Kumar</span>
+                <span class="name">Chirag Tomar</span>
+                <span class="name">Deeksha Pandey</span>
+                <span class="name">Hari Mohan</span>
+                <span class="name">Joval Joseph</span>
+                <span class="name">Mansi Sahu</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Neha Pandey</span>
+                <span class="name">Nikhil Chhipa</span>
+                <span class="name">Nimesh Nadar</span>
+                <span class="name">Nisha Dhakad</span>
+                <span class="name">Patel Shrey</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Somosree Sikdar</span>
+                <span class="name">Tanchho Limbu</span>
+                <span class="name">Vaibhav Gupta</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#23</span> Chirag Tomar</span>
+                <span class="select"><span class="hash">#24</span> Joval Joseph</span>
+                <span class="select"><span class="hash">#25</span> Neha Pandey</span>
+                <span class="select"><span class="hash">#26</span> Nimesh Nadar</span>
+                <span class="select"><span class="hash">#27</span> Nisha Dhakad</span>
+            </td>
+        </tr>
+
+        <!-- 31. Samsung -->
+        <tr>
+            <td class="date-cell">19-Sep-25</td>
+            <td class="company-cell">Samsung R&amp;D</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹26.80 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 32. PhonePe -->
+        <tr>
+            <td class="date-cell">24-Sep-25</td>
+            <td class="company-cell">PhonePe</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹16.50 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ajay</span>
+                <span class="name">Akshat Jain</span>
+                <span class="name">Anshuraj Kawlecha</span>
+                <span class="name">Bharat Bishnoi</span>
+                <span class="name">Chirag Tomar</span>
+                <span class="name">Deeksha Pandey</span>
+                <span class="name">Joval Joseph</span>
+                <span class="name">Manish Sutar</span>
+                <span class="name">Neha Pandey</span>
+                <span class="name">Nikhil Chhipa</span>
+                <span class="name">Nimesh Nadar</span>
+                <span class="name">Nisha Dhakad</span>
+                <span class="name">Patel Shrey</span>
+                <span class="name">Prateek Dwivedi</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Saurabh Soni</span>
+                <span class="name">Shreevallabh Patidar</span>
+                <span class="name">Sunil Kumar</span>
+                <span class="name">Tanchho Limbu</span>
+                <span class="name">Vaibhav Gupta</span>
+            </td>
+            <td class="select-cell"><span class="select"><span class="hash">#22</span> Nikhil Chhipa</span></td>
+        </tr>
+
+        <!-- 33. Fischer Jordan -->
+        <tr>
+            <td class="date-cell">24-Sep-25</td>
+            <td class="company-cell">Fischer Jordan</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7.5+</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Abhinav</span>
+                <span class="name">Akshat Jain</span>
+                <span class="name">Mansi Sahu</span>
+            </td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 34. CynLr -->
+        <tr>
+            <td class="date-cell">01-Oct-25</td>
+            <td class="company-cell">CynLr</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">—</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="name">Vaibhav Vyas</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 35. IBM -->
+        <tr>
+            <td class="date-cell">15-Oct-25</td>
+            <td class="company-cell">IBM</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹18.75 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 7+</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aditya Kumar</span>
+                <span class="name">Ajeet Singh</span>
+                <span class="name">Altaf Hussain</span>
+                <span class="name">Amandeep</span>
+                <span class="name">Aman Kumar</span>
+                <span class="name">Anshuraj Kawlecha</span>
+                <span class="name">Ashish</span>
+                <span class="name">Chandan Kumar</span>
+                <span class="name">Hari Mohan</span>
+                <span class="name">Hariom Patidar</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Patel Shrey</span>
+                <span class="name">Raghvendra Baghel</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Ritik Verma</span>
+                <span class="name">Sourabh Ramteke</span>
+            </td>
+            <td class="select-cell"><span class="select"><span class="hash">#28</span> Altaf Hussain</span></td>
+        </tr>
+
+        <!-- 36. Presidio -->
+        <tr>
+            <td class="date-cell">22-Oct-25</td>
+            <td class="company-cell">Presidio</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹10.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ajay Mourya</span>
+                <span class="name">Hariom Patidar</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Vaibhav Gupta</span>
+            </td>
+            <td class="select-cell"><span class="select"><span class="hash">#29</span> Vaibhav Gupta</span></td>
+        </tr>
+
+        <!-- 37. Deloitte -->
+        <tr>
+            <td class="date-cell">29-Oct-25</td>
+            <td class="company-cell">Deloitte</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹8.10 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6.5+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Anshuraj Kawlecha</span>
+                <span class="name">Debanjan Barman</span>
+                <span class="name">Jayram Saha</span>
+                <span class="name">Manish Sutar</span>
+                <span class="name">Pawan Kumar Nag</span>
+                <span class="name">Ritik Verma</span>
+                <span class="name">Saurabh Soni</span>
+                <span class="name">Shreevallabh Patidar</span>
+                <span class="name">Sourabh Ramteke</span>
+                <span class="name">Tushar Gehlot</span>
+                <span class="name">Vijay Prajapati</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#30</span> Debanjan Barman</span>
+                <span class="select"><span class="hash">#31</span> Ritik Verma</span>
+            </td>
+        </tr>
+
+        <!-- 38. CISCO - FTE (Nov 2025) -->
+        <tr>
+            <td class="date-cell">03-Nov-25</td>
+            <td class="company-cell">CISCO</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹27.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#32</span> Abhinav</span></td>
+        </tr>
+
+        <!-- 39. PharmaACE -->
+        <tr>
+            <td class="date-cell">07-Nov-25</td>
+            <td class="company-cell">PharmaACE</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹11.62 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Deeksha Pandey</span>
+                <span class="name">Harshit Anand</span>
+                <span class="name">Manish Sutar</span>
+                <span class="name">Nisha Samediya</span>
+                <span class="name">Priyanshu Miglani</span>
+                <span class="name">Shreya Gupta</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#33</span> Deeksha Pandey</span>
+                <span class="select"><span class="hash">#34</span> Harshit Anand</span>
+                <span class="select"><span class="hash">#35</span> Priyanshu Miglani</span>
+                <span class="select"><span class="hash">#36</span> Shreya Gupta</span>
+            </td>
+        </tr>
+
+        <!-- 40. Zuci Systems -->
+        <tr>
+            <td class="date-cell">20-Nov-25</td>
+            <td class="company-cell">Zuci Systems</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹12.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">Refer PDF</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#37</span> Chandan Kumar</span></td>
+        </tr>
+
+        <!-- 41. Amdocs -->
+        <tr>
+            <td class="date-cell">28-Nov-25</td>
+            <td class="company-cell">Amdocs</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹12.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aditya Kumar</span>
+                <span class="name">Akshat Jain</span>
+                <span class="name">Aman Kumar</span>
+                <span class="name">Amandeep</span>
+                <span class="name">Amita Makwana</span>
+                <span class="name">Anshuraj Kawlecha</span>
+                <span class="name">Ashish</span>
+                <span class="name">Avinash Sahu</span>
+                <span class="name">Harsh Panchal</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Nisha Samediya</span>
+                <span class="name">Ravi Sonamani</span>
+                <span class="name">Rohit Mishra</span>
+                <span class="name">Sahil Kumar</span>
+                <span class="name">Shrey Patel</span>
+                <span class="name">Anand Gupta</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#38</span> Akshat Jain</span>
+                <span class="select"><span class="hash">#39</span> Amita Makwana</span>
+                <span class="select"><span class="hash">#40</span> Anshuraj Kawlecha</span>
+                <span class="select"><span class="hash">#41</span> Rohit Mishra</span>
+                <span class="select"><span class="hash">#42</span> Sahil Kumar</span>
+                <span class="select"><span class="hash">#43</span> Avinash Sahu</span>
+                <span class="select"><span class="hash">#44</span> Shrey Patel</span>
+            </td>
+        </tr>
+
+        <!-- 42. Foxsense Innovations -->
+        <tr>
+            <td class="date-cell">05-Dec-25</td>
+            <td class="company-cell">Foxsense Innovations</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹10.73 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Hariom Patidar</span>
+                <span class="name">Hari Mohan</span>
+                <span class="name">Mansi Sahu</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Raghvendra Baghel</span>
+                <span class="name">Ravi Sonamani</span>
+                <span class="name">Rishika Gupta</span>
+                <span class="name">Shreevallabh Patidar</span>
+                <span class="name">Somosree Sikdar</span>
+                <span class="name">Tanchho Limbu</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#45</span> Hari Mohan</span>
+                <span class="select"><span class="hash">#46</span> Tanchho Limbu</span>
+            </td>
+        </tr>
+
+        <!-- 43. Profinch (1st Drive) -->
+        <tr>
+            <td class="date-cell">10-Dec-25</td>
+            <td class="company-cell">Profinch</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹8.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">Refer PDF</span></td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#47</span> Adarsh Patidar</span>
+                <span class="select"><span class="hash">#48</span> Ajay</span>
+                <span class="select"><span class="hash">#49</span> Aman Kumar</span>
+                <span class="select"><span class="hash">#50</span> Anand Gupta</span>
+                <span class="select"><span class="hash">#51</span> Bharat Bishnoi</span>
+                <span class="select"><span class="hash">#52</span> Hariom Patidar</span>
+                <span class="select"><span class="hash">#53</span> Manish Choudhary</span>
+                <span class="select"><span class="hash">#54</span> Mansi Sahu</span>
+                <span class="select"><span class="hash">#55</span> Nisha Samediya</span>
+                <span class="select"><span class="hash">#56</span> Pradeep Kumar</span>
+                <span class="select"><span class="hash">#57</span> Raghvendra Baghel</span>
+                <span class="select"><span class="hash">#58</span> Shreevallabh Patidar</span>
+                <span class="select"><span class="hash">#59</span> Somosree Sikdar</span>
+                <span class="select"><span class="hash">#60</span> Sunil Kumar</span>
+                <span class="select"><span class="hash">#61</span> Vaishali Yadav</span>
+            </td>
+        </tr>
+
+        <!-- 44. Mphasis -->
+        <tr>
+            <td class="date-cell">11-Dec-25</td>
+            <td class="company-cell">Mphasis</td>
+            <td><span class="offer-type intern-pbc">Intern + PBC</span></td>
+            <td class="ctc-cell">₹6.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Gyanprakash Yadav</span>
+                <span class="name">Manas Sharma</span>
+                <span class="name">Pradeep Kumar</span>
+                <span class="name">Prashant Singh</span>
+                <span class="name">Rajesh</span>
+                <span class="name">Rohit Kaithwas</span>
+                <span class="name">Sourabh Ramteke</span>
+                <span class="name">Vijay Prajapati</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#62</span> Manas Sharma</span>
+                <span class="select"><span class="hash">#63</span> Prashant Singh</span>
+                <span class="select"><span class="hash">#64</span> Rohit Kaithwas</span>
+                <span class="select"><span class="hash">#65</span> Sourabh Ramteke</span>
+                <span class="select"><span class="hash">#66</span> Vijay Prajapati</span>
+            </td>
+        </tr>
+
+        <!-- 45. State Street -->
+        <tr>
+            <td class="date-cell">22-Dec-25</td>
+            <td class="company-cell">State Street</td>
+            <td><span class="offer-type intern-pbc">6mo Intern + PBC</span></td>
+            <td class="ctc-cell">₹27.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Amandeep</span>
+                <span class="name">Anamika Verma</span>
+                <span class="name">Gyanprakash Yadav</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Manish Kumar</span>
+                <span class="name">Neelesh Pal</span>
+                <span class="name">Pawan Nag</span>
+                <span class="name">Pratham Gupta</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Rajesh</span>
+                <span class="name">Rishi Kaushal</span>
+                <span class="name">Rishita Sharma</span>
+                <span class="name">Rohit Panwar</span>
+                <span class="name">Vijay Meena</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#67</span> Anamika Verma</span>
+                <span class="select"><span class="hash">#68</span> Neelesh Pal</span>
+            </td>
+        </tr>
+
+        <!-- 46. EdgeFleet -->
+        <tr>
+            <td class="date-cell">Jan-26</td>
+            <td class="company-cell">EdgeFleet</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹12.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="name">Goutam Parsniya</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 47. Profinch (2nd Drive) -->
+        <tr>
+            <td class="date-cell">15-Feb-26</td>
+            <td class="company-cell">Profinch</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹8.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Aditya Kumar</span>
+                <span class="name">Aman Sinha</span>
+                <span class="name">Nitin Pandey</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#69</span> Aditya Kumar</span>
+                <span class="select"><span class="hash">#70</span> Aman Sinha</span>
+                <span class="select"><span class="hash">#71</span> Nitin Pandey</span>
+            </td>
+        </tr>
+
+        <!-- 48. In-Solutions Global -->
+        <tr>
+            <td class="date-cell">19-Mar-26</td>
+            <td class="company-cell">In-Solutions Global</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹6-8 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="select"><span class="hash">#72</span> Rishika Gupta</span></td>
+        </tr>
+
+        <!-- 49. BluePond.AI -->
+        <tr>
+            <td class="date-cell">20-Mar-26</td>
+            <td class="company-cell">BluePond.AI</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹11.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Amandeep</span>
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Ashish</span>
+                <span class="name">Gyanprakash Yadav</span>
+                <span class="name">Jayram Saha</span>
+                <span class="name">Kashish Malviya</span>
+                <span class="name">Kishu Gupta</span>
+                <span class="name">Manish Kumar</span>
+                <span class="name">Manish Sutar</span>
+                <span class="name">Pawan Nag</span>
+                <span class="name">Pratham Gupta</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Ravi Sonamani</span>
+                <span class="name">Rishi Kaushal</span>
+                <span class="name">Rishu Sharma</span>
+                <span class="name">Saurabh Soni</span>
+                <span class="name">Tushar Gehlot</span>
+            </td>
+            <td class="select-cell">
+                <span class="select"><span class="hash">#73</span> Ashish</span>
+                <span class="select"><span class="hash">#74</span> Kishu Gupta</span>
+                <span class="select"><span class="hash">#75</span> Manish Sutar</span>
+                <span class="select"><span class="hash">#76</span> Saurabh Soni</span>
+            </td>
+        </tr>
+
+        <!-- 50. TCS INE -->
+        <tr>
+            <td class="date-cell">15-Jun-26</td>
+            <td class="company-cell">TCS INE</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹11.59 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span><span class="criteria">No Active Backlogs</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Harsh Panchal</span>
+                <span class="name">Jayram Saha</span>
+                <span class="name">Pawan Nag</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Ravi Sonamani</span>
+                <span class="name">Rishita Sharma</span>
+                <span class="name">Tushar Gehlot</span>
+            </td>
+            <td class="select-cell"><span class="select"><span class="hash">#77</span> Tushar Gehlot</span></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: ADDITIONAL COMPANIES (No Selects / Pending)       -->
+    <!-- ============================================================ -->
+    <div class="section-title">📋 ADDITIONAL COMPANIES (No Selects / Process Initiated)</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Offer Type</th>
+                <th>CTC / Stipend</th>
+                <th>Requirements</th>
+                <th>Shortlisted</th>
+                <th>Selected</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <!-- 51. Accelequant -->
+        <tr>
+            <td class="date-cell">Nov-25</td>
+            <td class="company-cell">Accelequant</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹20-24 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Sunil Kumar</span>
+                <span class="name">Tushar Gehlot</span>
+            </td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 52. Think Gas -->
+        <tr>
+            <td class="date-cell">Feb-26</td>
+            <td class="company-cell">Think Gas</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹8.50 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 53. TCS R&I -->
+        <tr>
+            <td class="date-cell">Jan-26</td>
+            <td class="company-cell">TCS R&amp;I</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹11.59 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell"><span class="name">Rahul Kumar</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 54. Bloom Energy -->
+        <tr>
+            <td class="date-cell">Feb-26</td>
+            <td class="company-cell">Bloom Energy</td>
+            <td><span class="offer-type intern-pbc">Intern + PBC</span></td>
+            <td class="ctc-cell">₹13.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 55. Amazon -->
+        <tr>
+            <td class="date-cell">Jun-26</td>
+            <td class="company-cell">Amazon</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹47.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Amandeep</span>
+                <span class="name">Amit</span>
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Goutam Parsniya</span>
+                <span class="name">Gyanprakash Yadav</span>
+                <span class="name">Harsh Panchal</span>
+                <span class="name">Janki Kumari</span>
+                <span class="name">Jayram Saha</span>
+                <span class="name">Kashish Malviya</span>
+                <span class="name">Manish Kumar</span>
+                <span class="name">Pawan Nag</span>
+                <span class="name">Pranjal Tripathi</span>
+                <span class="name">Pratham Gupta</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Rajesh</span>
+                <span class="name">Rishi Kaushal</span>
+                <span class="name">Rishita Sharma</span>
+                <span class="name">Rishu Sharma</span>
+                <span class="name">Rohit Kumar</span>
+                <span class="name">Vaibhav Vyas</span>
+                <span class="name">Vijay Meena</span>
+            </td>
+            <td class="select-cell"><span class="pending">Pending</span></td>
+        </tr>
+
+        <!-- 56. Sri Chaitanya -->
+        <tr>
+            <td class="date-cell">May-26</td>
+            <td class="company-cell">Sri Chaitanya</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹5.5-7 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 57. Cairn Oil & Gas -->
+        <tr>
+            <td class="date-cell">Mar-26</td>
+            <td class="company-cell">Cairn Oil &amp; Gas</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹6.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">—</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 58. Bread Financial -->
+        <tr>
+            <td class="date-cell">Apr-26</td>
+            <td class="company-cell">Bread Financial</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹14.50 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell"><span class="no-shortlist">No Shortlists</span></td>
+            <td class="select-cell"><span class="no-select">No Selects</span></td>
+        </tr>
+
+        <!-- 59. OptiSol -->
+        <tr>
+            <td class="date-cell">May-26</td>
+            <td class="company-cell">OptiSol</td>
+            <td><span class="offer-type intern-fte">FTE + Intern</span></td>
+            <td class="ctc-cell">₹13-15 LPA</td>
+            <td class="requirement-cell"><span class="criteria">No Criteria</span></td>
+            <td class="shortlist-cell">
+                <span class="name">Ajay</span>
+                <span class="name">Amandeep</span>
+                <span class="name">Aradhya Gupta</span>
+                <span class="name">Goutam Parsniya</span>
+                <span class="name">Gyanprakash Yadav</span>
+                <span class="name">Janki Kumari</span>
+                <span class="name">Jayram Saha</span>
+                <span class="name">Kashish Malviya</span>
+                <span class="name">Manish Kumar</span>
+                <span class="name">Pawan Nag</span>
+                <span class="name">Pranjal Tripathi</span>
+                <span class="name">Pratham Gupta</span>
+                <span class="name">Rahul Kumar</span>
+                <span class="name">Ravi Sonamani</span>
+                <span class="name">Rishi Kaushal</span>
+                <span class="name">Rishita Sharma</span>
+                <span class="name">Rishu Kumar</span>
+                <span class="name">Vaibhav Vyas</span>
+                <span class="name">Tushar Gehlot</span>
+            </td>
+            <td class="select-cell"><span class="pending">Pending</span></td>
+        </tr>
+
+        <!-- 60. Embitel (CARIAD) -->
+        <tr>
+            <td class="date-cell">Jun-26</td>
+            <td class="company-cell">Embitel (CARIAD)</td>
+            <td><span class="offer-type fte">Full Time</span></td>
+            <td class="ctc-cell">₹10.00 LPA</td>
+            <td class="requirement-cell"><span class="criteria">CGPA 6+</span></td>
+            <td class="shortlist-cell"><span style="color:#666; font-size:11px;">Process Initiated</span></td>
+            <td class="select-cell"><span class="pending">Pending</span></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px; padding: 15px 20px; background: #f8f9fa; border-radius: 10px; font-size: 12px; color: #555; border-top: 2px solid #e8eaf6;">
+        <strong>📌 Notes:</strong>
+        <ul style="margin: 8px 0 0 20px; line-height: 1.8;">
+            <li><span style="color:#1a237e; font-weight:600;">#1 to #77</span> — Unique selection numbers in chronological order</li>
+            <li><span style="color:#c62828; font-weight:600;">No Selects</span> — Company visited but didn't select any MCA student</li>
+            <li><span style="color:#c62828; font-weight:600;">No Shortlists</span> — No MCA student was shortlisted</li>
+            <li><span style="color:#e65100; font-weight:600;">PBC</span> — Performance Based Conversion</li>
+            <li><span style="color:#e65100; font-weight:600;">PPO</span> — Pre-Placement Offer (converted from internship)</li>
+            <li><span style="color:#e65100; font-weight:600;">Pending</span> — Process ongoing, results awaited</li>
+            <li><strong>Total Companies Listed:</strong> 60 (All companies from the chat)</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #999;">
+        Generated from WhatsApp Chat Data · MCA Batch 2023-26 · NIT Tiruchirappalli
+    </div>
+</div>
+
+
+</body></html>

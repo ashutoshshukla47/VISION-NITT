@@ -1,0 +1,13 @@
+{
+  "name": "vision-nitt",
+  "private": true,
+  "workspaces": [
+    "vision"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace vision",
+    "build": "npm run build --workspace vision",
+    "lint": "npm run lint --workspace vision",
+    "preview": "npm run preview --workspace vision"
+  }
+}
